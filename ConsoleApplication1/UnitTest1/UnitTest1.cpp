@@ -19,5 +19,14 @@ namespace UnitTest1
             int arr2[size] = { 5, 4, 3, 2, 1 };
             Assert::IsFalse(isNonDecreasingRecursive(arr2, size));
         }
+        TEST_METHOD(TestIsNonDecreasingRecursiveT)
+        {
+            const int size = 5;
+            int arr1[size] = { 1, 2, 3, 4, 5 };
+            Assert::IsTrue(isNonDecreasingRecursiveT(arr1, size));
+
+            int arr2[size] = { 5, 4, 3, 2, 1 };
+            Assert::IsFalse(isNonDecreasingRecursiveT(arr2, size));
+        }
 	};
 }
